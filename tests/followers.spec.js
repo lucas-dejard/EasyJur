@@ -8,7 +8,7 @@ test('Verificar o funcionamento do painel de seguidores do usuário pesquisado',
   await page.goto(`${process.env.URL}`);
 
   // Pesquisa do Usuario
-  await utilidades.pesquisar(page, `${process.env.GITUSER}`, `${process.env.NOME_USUARIO2}`)
+  await utilidades.pesquisar(page, `${process.env.GITUSER}`, `${process.env.NOME_USUARIO}`)
   // Asserção
   await expect(utilidades.followersPanel.filter({ has: page.getByRole('img', { name: 'AnneLivia' }) })).toBeVisible()
   await expect(utilidades.followersPanel.filter({ has: page.getByRole('heading', { name: 'AnneLivia' }) })).toBeVisible()

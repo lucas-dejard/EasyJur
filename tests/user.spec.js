@@ -8,10 +8,10 @@ test('Verificar o funcionamento do painel de usuário pesquisado', async ({ page
   await page.goto(`${process.env.URL}`);
 
   // Pesquisa do Usuario
-  await utilidades.pesquisar(page, `${process.env.GITUSER}`, `${process.env.NOME_USUARIO2}`)
+  await utilidades.pesquisar(page, `${process.env.GITUSER}`, `${process.env.NOME_USUARIO}`)
   // Asserção
-  await expect(utilidades.userPanel.filter({ has: page.getByRole('img', { name: `${process.env.NOME_USUARIO2}` }) })).toBeVisible()
-  await expect(utilidades.userPanel.filter({ has: page.getByRole('heading', { name: `${process.env.NOME_USUARIO2}` }) })).toBeVisible()
+  await expect(utilidades.userPanel.filter({ has: page.getByRole('img', { name: `${process.env.NOME_USUARIO}` }) })).toBeVisible()
+  await expect(utilidades.userPanel.filter({ has: page.getByRole('heading', { name: `${process.env.NOME_USUARIO}` }) })).toBeVisible()
   await expect(page.getByText('@john doe')).toBeVisible()
   await expect(utilidades.userPanel.filter({ has: page.getByRole('link', { name: 'follow' }) })).toBeVisible()
   await expect(utilidades.textBio.filter({ hasText: 'Student of Computer engineering in UFPA - Universidade Federal do Pará.' })).toBeVisible()

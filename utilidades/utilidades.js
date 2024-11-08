@@ -5,12 +5,6 @@ exports.Utilidades = class Utilidades {
     constructor(page) {
         this.page = page
 
-        // -- Links -- //
-        this.clienteRoboaqacypress = ''
-
-        // -- Usuários -- //
-        this.loginAdmin1 = 'AnneLivia'
-
         // -- Seletores -- //
 
         // -- TextBox -- //
@@ -28,7 +22,7 @@ exports.Utilidades = class Utilidades {
         this.userPanel = page.locator('xpath=/html/body/div/main/section[3]/div/article[1]/header')
         this.followersPanel = page.locator('div[class="followers"]')
         this.textBio = page.locator('p[class="bio"]')
-
+        this.textRequests = page.getByTestId('rate-limit')
     }
 
     // -- funções -- //
