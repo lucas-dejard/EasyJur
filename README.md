@@ -8,6 +8,11 @@ Link do projeto: https://gh-users-search.netlify.app/
 
 ## Esquema do projeto
 ![image](https://github.com/user-attachments/assets/a72b0d65-88ca-481e-999e-82b9ffd0612b)
+Legenda:
+Vermelho = Prioridade Alta
+Amarelo = Prioridade Média
+Verde = Prioridade Baixa
+
 O esquema em formato PDF se encontra disponivel na pasta *Utilidades* do projeto.
 
 # Instalação  
@@ -30,3 +35,6 @@ Abrindo o browser
 
 # OBSERVAÇÂO
 Em um projeto real não se deve commitar os arquivos .ENV e .yml, entretando para esse projeto sem a utilização dos arquivos .ENV e .yml commitados seria impossibilitada a execução correta do projeto
+
+## GITHUB ACTIONS
+O arquivo .yml que configura o job de execução do projeto está configurado para executar a cada commit e pull requests realizados para as branchs master e Main 
