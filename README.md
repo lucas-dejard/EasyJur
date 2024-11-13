@@ -2,7 +2,7 @@
 Projeto de testes para o processo seletivo EasyJur
 
 # Contexto
-O projeto escolhido para automação é o GithuUser Profile Search
+O projeto escolhido para automação é o GithubUser Profile Search
 Um projeto simples de recuperar o o perfil de um usuário do github e suas infmorações adicionais
 Link do projeto: https://gh-users-search.netlify.app/
 
